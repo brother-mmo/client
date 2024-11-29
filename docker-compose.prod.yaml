@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production  # Используем этап 'production' из Dockerfile
+    ports:
+      - '80:80'  # Пробрасываем порт для доступа к nginx
